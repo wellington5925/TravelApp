@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="br.com.senacsp.travelapp.resultsActivity"
+    android:background="#fff">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/gradientebackground"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:text="You will travel by?"
+                android:textColor="#FFF"
+                android:textSize="29sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="160dp"
+            android:elevation="4dp"
+            android:layout_marginLeft="40dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="#fff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Min Price:"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="20dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="400"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_below="@id/aviao"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="I Can Book"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/botaoum"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="160dp"
+            android:id="@+id/tremcard"
+            android:layout_height="130dp"
+            android:layout_marginTop="160dp"
+            android:elevation="4dp"
+            android:layout_marginLeft="220dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="#fff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Average Price:"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="600"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_below="@id/aviao"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="I Can Book"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/botaoum"/>
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/tres"
+            android:layout_width="340dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="40dp"
+            android:elevation="4dp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/tremcard">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:background="#fff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Maximum Price:"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="800"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:layout_below="@id/aviao"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <Button
+                    android:layout_width="110dp"
+                    android:layout_height="40dp"
+                    android:text="I Can Book"
+                    android:layout_marginTop="60dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="@drawable/botaoum"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:text="Find Now"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/botaoum"
+            android:layout_below="@id/tres"/>
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

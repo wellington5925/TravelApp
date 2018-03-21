@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.senacsp.travelapp.Inicial_Activity">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/travel_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"/>
+
+
+    <ImageView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/travel_text"
+        android:layout_below="@+id/icon"
+        android:layout_marginLeft="120dp"/>
+    <TextView
+        android:id="@+id/descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best way to organize travels"
+        android:layout_below="@+id/text"
+        android:layout_marginLeft="145dp"
+        android:textSize="11sp"/>
+    <Button
+        android:id="@+id/botaoum"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Sign Up"
+        android:layout_below="@+id/descricao"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/botaoum"
+        android:layout_marginTop="100dp"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="Sign In"
+        android:layout_below="@+id/botaoum"
+        android:layout_marginLeft="120dp"
+        android:background="@drawable/botaodois"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
